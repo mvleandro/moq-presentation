@@ -55,8 +55,11 @@ namespace MoqPresentationUnitTest
             // Initializing repository.
             UserElasticsearchRepository repository = CreateRepository(mockClient.Object);
 
+            // Setup Logger Mock
+            Mock<ILogger<UsersController>> mockLogger = new Mock<ILogger<UsersController>>();
+
             // Initializing the controller
-            UsersController controller = new UsersController(null);
+            UsersController controller = new UsersController(null, mockLogger.Object);
             controller.Repository = repository;
 
             // Calling get.
@@ -65,6 +68,7 @@ namespace MoqPresentationUnitTest
 
             // Assertions.
             mockClient.Verify(c => c.Get<User>(It.IsAny<GetRequest>()), Times.Once());
+            mockLogger.Verify(l => l.Log(It.IsAny<Microsoft.Extensions.Logging.LogLevel>(), It.IsAny<EventId>(), It.IsAny<string>(), It.IsAny<Exception>(), It.IsNotNull<Func<string, Exception, string>>()), Times.Never());
             Assert.AreEqual(200, result.StatusCode);
             Assert.IsFalse(response.Failed);
             Assert.IsNull(response.Error);
@@ -91,8 +95,11 @@ namespace MoqPresentationUnitTest
             // Initializing repository.
             UserElasticsearchRepository repository = CreateRepository(mockClient.Object);
 
+            // Setup Logger Mock
+            Mock<ILogger<UsersController>> mockLogger = new Mock<ILogger<UsersController>>();
+
             // Initializing controller.
-            UsersController controller = new UsersController(null);
+            UsersController controller = new UsersController(null, mockLogger.Object);
             controller.Repository = repository;
 
             // Calling get.
@@ -100,6 +107,8 @@ namespace MoqPresentationUnitTest
             ServiceResponse response = result.Value as ServiceResponse;
 
             // Assertions.
+            mockClient.Verify(c => c.Get<User>(It.IsAny<GetRequest>()), Times.Once());
+            mockLogger.Verify(l => l.Log(Microsoft.Extensions.Logging.LogLevel.Information, It.IsAny<EventId>(), "Not found.", null, It.IsNotNull<Func<string, Exception, string>>()));
             Assert.AreEqual(404, result.StatusCode);
             Assert.IsTrue(response.Failed);
             Assert.IsNull(response.Error);
@@ -137,6 +146,7 @@ namespace MoqPresentationUnitTest
             ServiceResponse response = result.Value as ServiceResponse;
 
             // Assertions.
+            mockClient.Verify(c => c.Get<User>(It.IsAny<GetRequest>()), Times.Once());
             mockLogger.Verify(l => l.Log(Microsoft.Extensions.Logging.LogLevel.Error, It.IsAny<EventId>(), "Server error.", It.IsAny<Exception>(), It.IsNotNull<Func<string,Exception,string>>()));
             Assert.AreEqual(500, result.StatusCode);
             Assert.IsTrue(response.Failed);

@@ -56,6 +56,7 @@ namespace MoqPresentation.Controllers
 
                 if(user == null)
                 {
+                    Logger.Log(LogLevel.Information, new EventId(1, "Not found"), "Not found.", null, (arg1, arg2) => arg1);
                     response.Failed = true;
                     return StatusCode(404, response);
                 }
@@ -64,13 +65,11 @@ namespace MoqPresentation.Controllers
             }
             catch(Exception ex)
             {   
-
-                Logger.Log(LogLevel.Error, new EventId(1, "Exception"), "Server error.", ex, (arg1, arg2) => arg1);
+                Logger.Log(LogLevel.Error, new EventId(1, nameof(ex)), "Server error.", ex, (arg1, arg2) => arg1);
                 response.Failed = true;
                 response.Error = ex;
                 return StatusCode(500, response);
             }
-
         }
 
         // POST api/users
