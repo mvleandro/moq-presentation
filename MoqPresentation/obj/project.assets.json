@@ -28700,11 +28700,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mleandro/Projects/MoqPresentation/MoqPresentation/MoqPresentation.csproj",
+      "projectUniqueName": "/Users/mleandro/Projects/moq-presentation/MoqPresentation/MoqPresentation.csproj",
       "projectName": "MoqPresentation",
-      "projectPath": "/Users/mleandro/Projects/MoqPresentation/MoqPresentation/MoqPresentation.csproj",
+      "projectPath": "/Users/mleandro/Projects/moq-presentation/MoqPresentation/MoqPresentation.csproj",
       "packagesPath": "/Users/mleandro/.nuget/packages/",
-      "outputPath": "/Users/mleandro/Projects/MoqPresentation/MoqPresentation/obj",
+      "outputPath": "/Users/mleandro/Projects/moq-presentation/MoqPresentation/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mleandro/.config/NuGet/NuGet.Config"

@@ -66,9 +66,11 @@ namespace MoqPresentationUnitTest
             ObjectResult result = controller.Get(1) as ObjectResult;
             ServiceResponse response = result.Value as ServiceResponse;
 
-            // Assertions.
+            // Verifications.
             mockClient.Verify(c => c.Get<User>(It.IsAny<GetRequest>()), Times.Once());
             mockLogger.Verify(l => l.Log(It.IsAny<Microsoft.Extensions.Logging.LogLevel>(), It.IsAny<EventId>(), It.IsAny<string>(), It.IsAny<Exception>(), It.IsNotNull<Func<string, Exception, string>>()), Times.Never());
+
+            // Assertions.
             Assert.AreEqual(200, result.StatusCode);
             Assert.IsFalse(response.Failed);
             Assert.IsNull(response.Error);
@@ -106,9 +108,11 @@ namespace MoqPresentationUnitTest
             ObjectResult result = controller.Get(1) as ObjectResult;
             ServiceResponse response = result.Value as ServiceResponse;
 
-            // Assertions.
+            // Verifications.
             mockClient.Verify(c => c.Get<User>(It.IsAny<GetRequest>()), Times.Once());
             mockLogger.Verify(l => l.Log(Microsoft.Extensions.Logging.LogLevel.Information, It.IsAny<EventId>(), "Not found.", null, It.IsNotNull<Func<string, Exception, string>>()));
+
+            // Assertions.
             Assert.AreEqual(404, result.StatusCode);
             Assert.IsTrue(response.Failed);
             Assert.IsNull(response.Error);
@@ -145,9 +149,11 @@ namespace MoqPresentationUnitTest
             ObjectResult result = controller.Get(1) as ObjectResult;
             ServiceResponse response = result.Value as ServiceResponse;
 
-            // Assertions.
+            // Verifications.
             mockClient.Verify(c => c.Get<User>(It.IsAny<GetRequest>()), Times.Once());
             mockLogger.Verify(l => l.Log(Microsoft.Extensions.Logging.LogLevel.Error, It.IsAny<EventId>(), "Server error.", It.IsAny<Exception>(), It.IsNotNull<Func<string,Exception,string>>()));
+
+            // Assertions.
             Assert.AreEqual(500, result.StatusCode);
             Assert.IsTrue(response.Failed);
             Assert.IsNotNull(response.Error);

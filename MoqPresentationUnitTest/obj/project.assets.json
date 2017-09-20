@@ -13673,11 +13673,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mleandro/Projects/MoqPresentation/MoqPresentationUnitTest/MoqPresentationUnitTest.csproj",
+      "projectUniqueName": "/Users/mleandro/Projects/moq-presentation/MoqPresentationUnitTest/MoqPresentationUnitTest.csproj",
       "projectName": "MoqPresentationUnitTest",
-      "projectPath": "/Users/mleandro/Projects/MoqPresentation/MoqPresentationUnitTest/MoqPresentationUnitTest.csproj",
+      "projectPath": "/Users/mleandro/Projects/moq-presentation/MoqPresentationUnitTest/MoqPresentationUnitTest.csproj",
       "packagesPath": "/Users/mleandro/.nuget/packages/",
-      "outputPath": "/Users/mleandro/Projects/MoqPresentation/MoqPresentationUnitTest/obj",
+      "outputPath": "/Users/mleandro/Projects/moq-presentation/MoqPresentationUnitTest/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mleandro/.config/NuGet/NuGet.Config"
@@ -13693,8 +13693,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/mleandro/Projects/MoqPresentation/MoqPresentation/MoqPresentation.csproj": {
-              "projectPath": "/Users/mleandro/Projects/MoqPresentation/MoqPresentation/MoqPresentation.csproj"
+            "/Users/mleandro/Projects/moq-presentation/MoqPresentation/MoqPresentation.csproj": {
+              "projectPath": "/Users/mleandro/Projects/moq-presentation/MoqPresentation/MoqPresentation.csproj"
             }
           }
         }
