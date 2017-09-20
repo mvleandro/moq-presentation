@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{689A1C45-3204-4FD9-8DE2-6276950F3CB2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MoqPresentationUnitTest/UsersControllerUnitTest.cs">
+    <Files>
+      <File FileName="MoqPresentation/Controllers/UsersController.cs" Line="68" Column="116" />
+      <File FileName="MoqPresentationUnitTest/UsersControllerUnitTest.cs" Line="121" Column="40" />
+      <File FileName="MoqPresentation/Repositories/UserElasticsearchRepository.cs" Line="88" Column="50" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="MoqPresentation" expanded="True">
+            <Node name="MoqPresentationUnitTest" expanded="True">
+              <Node name="MoqPresentationUnitTest" expanded="True">
+                <Node name="UsersControllerUnitTest" expanded="True">
+                  <Node name="Get_when_user_not_exists" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MoqPresentation PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,7 @@
+﻿{
+  "Elasticsearch":  {
+    "Address": "http://dev-cerberus.stone.com.br:9200",
+    "TimeOutInSeconds": 10,
+    "IndexName": "users" 
+  }
+}

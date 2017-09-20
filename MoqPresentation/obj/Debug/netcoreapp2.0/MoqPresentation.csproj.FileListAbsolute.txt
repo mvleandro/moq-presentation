@@ -1,0 +1,11 @@
+/Users/mleandro/Projects/MoqPresentation/MoqPresentation/bin/Debug/netcoreapp2.0/MoqPresentation.deps.json
+/Users/mleandro/Projects/MoqPresentation/MoqPresentation/bin/Debug/netcoreapp2.0/MoqPresentation.runtimeconfig.json
+/Users/mleandro/Projects/MoqPresentation/MoqPresentation/bin/Debug/netcoreapp2.0/MoqPresentation.runtimeconfig.dev.json
+/Users/mleandro/Projects/MoqPresentation/MoqPresentation/bin/Debug/netcoreapp2.0/MoqPresentation.dll
+/Users/mleandro/Projects/MoqPresentation/MoqPresentation/bin/Debug/netcoreapp2.0/MoqPresentation.pdb
+/Users/mleandro/Projects/MoqPresentation/MoqPresentation/obj/Debug/netcoreapp2.0/MoqPresentation.csproj.CoreCompileInputs.cache
+/Users/mleandro/Projects/MoqPresentation/MoqPresentation/obj/Debug/netcoreapp2.0/MoqPresentation.AssemblyInfoInputs.cache
+/Users/mleandro/Projects/MoqPresentation/MoqPresentation/obj/Debug/netcoreapp2.0/MoqPresentation.AssemblyInfo.cs
+/Users/mleandro/Projects/MoqPresentation/MoqPresentation/obj/Debug/netcoreapp2.0/MoqPresentation.dll
+/Users/mleandro/Projects/MoqPresentation/MoqPresentation/obj/Debug/netcoreapp2.0/MoqPresentation.pdb
+/Users/mleandro/Projects/MoqPresentation/MoqPresentation/obj/Debug/netcoreapp2.0/MoqPresentation.csprojResolveAssemblyReference.cache
